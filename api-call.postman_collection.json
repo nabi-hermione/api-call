@@ -1,0 +1,191 @@
+{
+  "info": {
+    "_postman_id": "8864db8c-0e3c-49cd-8087-18eca9add351",
+    "name": "api-call",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55158221",
+    "_collection_link": "https://go.postman.co/collection/55158221-8864db8c-0e3c-49cd-8087-18eca9add351?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "fetch-students-data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api-call.test/api/students",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetch-students-data-id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api-call.test/api/students/8",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "insert-students-data-id",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"kate\",\r\n    \"email\": \"kdiane@test.com\",\r\n    \"course\": \"BSIT\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-call.test/api/students",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "modify-fields-students-data-id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"kate\",\r\n    \"email\": \"katie@test.com\",\r\n    \"course\": \"BSIT\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-call.test/api/students/8",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patch-fields-students-data-id",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"course\": \"BS Tourism Management\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-call.test/api/students/8",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete-all-students-data",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://api-call.test/api/students",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete-students-data-id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"kate\",\r\n    \"email\": \"katie@test.com\",\r\n    \"course\": \"BSIT\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-call.test/api/students/8",
+          "protocol": "https",
+          "host": [
+            "api-call",
+            "test"
+          ],
+          "path": [
+            "api",
+            "students",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
