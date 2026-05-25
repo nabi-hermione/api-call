@@ -13,6 +13,7 @@ This project was created to demonstrate Laravel API development and database int
     - Partially update student information
     - Delete a student record
     - Delete all student records
+    - Seed sample student data into the database
 
 ## Setup Instructions:
 ## Requirements
@@ -41,7 +42,12 @@ Installation
     DB_PASSWORD=your_password
 7. Run migrations
     php artisan migrate
-8. Start the development server
+8. Seed the database
+    Run the seeder to insert sample student records into the database:
+    php artisan db:seed
+    Or run migration and seed together:
+    php artisan migrate --seed
+9. Start the development server
     php artisan serve
     The application will run at:
     http://127.0.0.1:8000
