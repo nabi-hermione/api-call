@@ -10,9 +10,9 @@ This project was created to demonstrate Laravel API development and database int
     - Retrieve a student by ID
     - Add a new student
     - Update student details
-    -Partially update student information
-    -Delete a student record
-    -Delete all student records
+    - Partially update student information
+    - Delete a student record
+    - Delete all student records
 
 ## Setup Instructions:
 Requirements
