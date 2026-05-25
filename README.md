@@ -15,9 +15,8 @@ This project was created to demonstrate Laravel API development and database int
     - Delete all student records
 
 ## Setup Instructions:
-
 ## Requirements
-Before running the project, make sure the following are installed:
+## Before running the project, make sure the following are installed:
     - PHP 8+
     - Composer
     - MySQL
